@@ -21,7 +21,7 @@
     examplesArray = ["250+ Barber Shops", "150+ Coffee Shops", "500+ Attorneys", "100+ Ice Cream Shops", "400+ Construction Companies", "350+ Hair Salons", "400+ Cleaning Companies", "1,000+ Restaurants"];
     setInterval(function () {
       count++;
-      $("span").fadeOut(400, function () {
+      $("h3 span").fadeOut(400, function () {
         $(this).text(examplesArray[count % examplesArray.length]).fadeIn(400);
       });
     }, 5000);
