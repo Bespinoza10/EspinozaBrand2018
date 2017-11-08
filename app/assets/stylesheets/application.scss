@@ -39,6 +39,9 @@
 .verde{
   background: $verde;
 }
+.amarillo{
+  background: $amarillo;
+}
 .azul-text{
   color: $azul !important;
 }
@@ -111,7 +114,7 @@
          background: $verde;
        }
      }
-     h1{
+     h1,h2{
        color: #fff;
        letter-spacing: 2px;
        font-weight: bold;
