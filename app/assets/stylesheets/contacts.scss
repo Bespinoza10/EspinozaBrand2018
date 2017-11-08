@@ -1,3 +1,19 @@
 // Place all the styles related to the Contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "imports";
+input, textarea{
+  border-bottom: 2px solid #fff !important;
+}
+.input-field label{
+  color: #cecece !important;
+  letter-spacing: 2px !important;
+}
+
+input:focus, textarea:focus{
+    border-bottom: 1px solid $verde !important;
+    box-shadow: 0 1px 0 0 $verde !important;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
