@@ -23,9 +23,9 @@
     <div class="container">
       <div class="nav-wrapper">
         <%= link_to image_tag("logo7-NEW-white.png", :alt => "EspinozaBrand"), root_path, :class => "brand-logo" %>
-        <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons dehaze" style="color: #fff;">dehaze</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><%= link_to "Home", root_path %></li>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -34,6 +34,22 @@
     </div>
   </nav>
 </div>
+<ul class="side-nav" id="mobile-demo">
+  <li>
+    <div class="user-view">
+      <img class="responsive-img" src="assets/logo7-NEW.png" style="max-width: 100px;">
+      <h4>MENU</h4>
+      <hr>
+    </div>
+  </li>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+</ul>
+<script>
+    $(".button-collapse").sideNav();;
+</script>
 
 <%= yield %>
 <footer class="footer">
@@ -41,10 +57,6 @@
     <p>© 2017 - EspinozaBrand - Website Design and Developed by <a href="http://espinozabrand.com">Us</a></p>
   </div>
 </footer>
-<script>
-    $(".button-collapse").sideNav();
-    $(".dropdown-button").dropdown();
-</script>
 
 <script src="https://use.typekit.net/lom6zip.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
