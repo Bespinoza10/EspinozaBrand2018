@@ -35,4 +35,27 @@ header.home-bg{
 #services{
   background: $gris;
   margin-bottom: 0px;
+  .individual_services{
+    .card{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-right: 10px;
+      padding-left: 10px;
+      @include transition(all, .4s);
+      h4.card-title{
+        color: $azul;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      &:hover{
+        box-shadow:4px 9px 20px 0px #bdbdbd;
+        transform: scale(1.1);
+        border-top: 6px solid $verde;
+        border-left: 6px solid $verde;
+        border-top-left-radius: 15px;
+        @include transition(all, .4s);
+        z-index: 1;
+      }
+    }
+  }
 }
