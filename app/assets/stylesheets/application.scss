@@ -16,14 +16,13 @@
  @import "imports";
 
   body{
-    font-family: Arial, Helvetica, sans-serif;
-    color:#000;
-    overflow-x: hidden;
+    font-family: filson-soft, sans-serif !important;
+    color: $azul;
   }
 
   h1, h2, h3, h4, h5, h6, p, ul, li{
-    color: #535353;
-    font-family: Arial, Helvetica, sans-serif;
+    color: $azul;
+    font-family: filson-soft, sans-serif !important;
   }
   p{
     letter-spacing: 2px;
@@ -33,23 +32,28 @@
    float: none !important;
    margin: 0 auto !important;
  }
-
-  #notice-wrapper{
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: 1050;
-    background: $azul;
-    p{
-      padding: 1.7rem 0;
-      text-align: center;
-      margin: 0;
-      font-size: 1rem;
-      font-weight: bold;
-      color: #fff;
-      letter-spacing: 2px;
-    }
-  }
+.azul{
+  background: $azul;
+}
+.verde{
+  background: $verde;
+}
+  // #notice-wrapper{
+  //   position: absolute;
+  //   top: 0px;
+  //   width: 100%;
+  //   z-index: 1050;
+  //   background: $azul;
+  //   p{
+  //     padding: 1.7rem 0;
+  //     text-align: center;
+  //     margin: 0;
+  //     font-size: 1rem;
+  //     font-weight: bold;
+  //     color: #fff;
+  //     letter-spacing: 2px;
+  //   }
+  // }
 
   .sections{
     padding-top: 6%;
@@ -67,7 +71,7 @@
        }
      }
      h1{
-       color: $oscuro;
+       color: #000;
        letter-spacing: 2px;
        font-weight: bold
      }

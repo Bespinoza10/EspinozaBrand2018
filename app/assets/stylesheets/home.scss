@@ -1,4 +1,26 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import "all";
+@import "imports";
+header.home-bg{
+  background-image: url('/assets/stand_out_bg2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain;
+  height: 100vh;
+  .bg-text{
+    margin-top: 10%;
+    span{
+      font-style: italic;
+    }
+    h1{
+      font-weight: bold;
+      color: $verde;
+      text-shadow: 8px 5px $azul;
+    }
+  }
+}

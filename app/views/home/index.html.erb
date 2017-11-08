@@ -1,1 +1,29 @@
-Hello World
+<header class="home-bg" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 bg-text">
+          <h3>There are <span>250+ Barber Shops</span></h3>
+          <h3>in the Greater Nashville Area. Don't be like the other guys. Be <b>Bold</b>.</h3>
+          <h1>STAND OUT.</h1>
+          <br>
+          <div class="col s6">
+            <a class="waves-effect waves-light btn azul">View Services</a>
+            <a class="waves-effect waves-light btn verde">Contact Us</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script type="text/javascript">
+  $(function (){
+    count = 0;
+    examplesArray = ["250+ Barber Shops", "150+ Coffee Shops", "500+ Attorneys", "100+ Ice Cream Shops", "400+ Construction Companies", "350+ Hair Salons", "400+ Cleaning Companies", "1,000+ Restaurants"];
+    setInterval(function () {
+      count++;
+      $("span").fadeOut(400, function () {
+        $(this).text(examplesArray[count % examplesArray.length]).fadeIn(400);
+      });
+    }, 5000);
+  });
+</script>

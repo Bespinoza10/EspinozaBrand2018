@@ -8,6 +8,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbar-fixed">
+  <nav>
+    <div class="container">
+      <div class="nav-wrapper">
+        <%= link_to image_tag("logo7-NEW-white.png", :alt => "EspinozaBrand"), root_path, :class => "brand-logo" %>
+        <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons dehaze" style="color: #fff;">dehaze</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<script>
+    $(".button-collapse").sideNav();
+    $(".dropdown-button").dropdown();
+</script>
+
+<script src="https://use.typekit.net/lom6zip.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <%= yield %>
 
