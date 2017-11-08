@@ -1,0 +1,19 @@
+@media screen and (max-width: 650px){
+  header.home-bg{
+    background-image: url('/assets/stand_out_bg-mobile.jpg');
+    height: 100vh;
+    background-attachment: scroll;
+    background-size: contain;
+    .bg-text{
+      h3{
+        font-size: 25px;
+      }
+      h1{
+        font-size:40px;
+      }
+      .view-services-btn{
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
