@@ -46,22 +46,22 @@
 .azul-text{
   color: $azul !important;
 }
-  // #notice-wrapper{
-  //   position: absolute;
-  //   top: 0px;
-  //   width: 100%;
-  //   z-index: 1050;
-  //   background: $azul;
-  //   p{
-  //     padding: 1.7rem 0;
-  //     text-align: center;
-  //     margin: 0;
-  //     font-size: 1rem;
-  //     font-weight: bold;
-  //     color: #fff;
-  //     letter-spacing: 2px;
-  //   }
-  // }
+  #notice-wrapper{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1050;
+    background: $verde;
+    p{
+      padding: 1rem 0;
+      text-align: center;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $azul;
+      letter-spacing: 2px;
+    }
+  }
 
  div.sections{
     padding-top: 6% !important;
