@@ -82,6 +82,22 @@ header.home-bg{
   }
 }
 
+#freeEstimate{
+  background: #fff;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 0px !important;
+  .container div{
+    h3{
+      color: $azul;
+      b{
+        color: $amarillo !important;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 //Contact Section
 #contact{
   background: $azul;
